@@ -77,11 +77,27 @@ public class RectangleView extends JFrame {
 			return Double.parseDouble(depthTextField.getText());
 	}
 	
+	public void setRectangleHeight(String txt){
+		heightTextField.setText(txt);
+	}
+	
+	public void setRectangleWidth(String txt){
+		widthTextField.setText(txt);
+	}
+	
+	public void setRectangleDepth(String txt){
+		depthTextField.setText(txt);
+	}
 	public void setResult(double result){
 			SurfaceAreaResult.setText(Double.toString(result));
 	}
 	
-	public void addComputeListener(ActionListener lisenComputeButton){
-		computeButton.addActionListener(lisenComputeButton);
+	public void setResult(String txt){
+		SurfaceAreaResult.setText(txt);
+	}
+	
+	public void addListener(ActionListener lisenButton){
+		computeButton.addActionListener(lisenButton);
+		clearButton.addActionListener(lisenButton);
 	}
 }
