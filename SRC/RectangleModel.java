@@ -1,6 +1,7 @@
 
 public class RectangleModel {
 	double surfaceAreaResult;
+	String txt = "";
 	
 	public void computeSurfaceArea(double height, double width, double depth){
 		double wh = width * height;
@@ -15,6 +16,14 @@ public class RectangleModel {
 	
 	public double getSurfaceArea(){
 		return surfaceAreaResult;
+	}
+	
+	public String clrText(){
+		return txt;
+	}
+	
+	public String clrResultLabel(){
+		return "----";
 	}
 
 }
